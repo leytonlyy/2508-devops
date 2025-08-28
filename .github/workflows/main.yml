@@ -13,12 +13,13 @@ jobs:
     steps:
     - name: Checkout node
       uses: actions/checkout@v5.0.0
+    - name: setup Pnpm
+      uses: pnpm/action-setup@v4.1.0
     - name: Use node.js 22
       uses: actions/setup-node@v4
       with:
         node-version: '22.x'
-    - name: setup Pnpm
-      uses: pnpm/action-setup@v4.1.0
+        cache: 'pnpm'
     - name: Install dependencies
       run: pnpm install
     - name: Build
