@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout node
+    - name: Checkout code
       uses: actions/checkout@v5.0.0
     - name: setup Pnpm
       uses: pnpm/action-setup@v4.1.0
@@ -30,5 +30,10 @@ jobs:
       uses: aquasecurity/setup-trivy@v0.2.3
     - name: Run SAST
       run: pnpm run audit:trivy
+    - name: Archive code coverage resutls
+      uses: upload-artefact@v4
+      with:
+        name: sast-report
+        path: trivy-report.html
     
     
