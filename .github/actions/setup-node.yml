@@ -12,7 +12,7 @@ runs:
       uses: actions/setup-node@v4
       with:
         node-version: "22.x"
-        cache: "npm"
+        cache: "pnpm"
     - name: Restore node_modules
       if: inputs.restore-cache == 'true'
       uses: actions/cache@v4

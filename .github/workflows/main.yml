@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: ./.github/actions/setup-node
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
       - name: Cache node_modules
         uses: actions/cache@v4
         with:
@@ -37,7 +37,7 @@ jobs:
         with:
           restore-cache: "true"
       - name: Build
-        run: npm run build
+        run: pnpm run build
 
   security-scan:
     runs-on: ubuntu-latest
@@ -52,9 +52,9 @@ jobs:
       - name: Aqua Security Trivy Install
         uses: aquasecurity/setup-trivy@v0.2.3
       - name: Run SAST
-        run: npm run audit:trivy
+        run: pnpm run audit:trivy
       - name: Archive SAST results
         uses: actions/upload-artifact@v4
         with:
           name: sast-report
-          path: report.html
+          path: trivy-report.html
