@@ -8,6 +8,9 @@ on:
   workflow_dispatch
 
 jobs:
+  install:
+    runs-on: ubuntu-latest
+    
   build:
     runs-on: ubuntu-latest
     steps:
@@ -24,3 +27,11 @@ jobs:
       run: pnpm install
     - name: Build
       run: pnpm run build
+    - name: Build
+      run: pnpm run build
+    - name: Aqua Security Trivy installer
+      uses: aquasecurity/setup-trivy@v0.2.3
+    - name: Run SAST
+      run: pnpm run audit:trivy
+    
+    
