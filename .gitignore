@@ -2,3 +2,4 @@ node_modules
 .turbo
 trivy-report.html
 trivy-report.txt
+pnpm-audit.html
