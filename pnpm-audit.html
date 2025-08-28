@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.1/build/styles/atom-one-dark.min.css">
+
+    <title>NPM Audit Report</title>
+    <meta name="description" content="7 known vulnerabilities found.">
+
+    <style>
+        pre {
+            background-color: #333333;
+            padding: 15px;
+        }
+
+        pre code {
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body class="mb-3">
+    <div class="container">
+        <h1 class="mt-5 text-center">NPM Audit Report</h1>
+
+        <div class="text-center">
+            <div class="card-deck my-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            7
+                        </h5>
+                        <p class="card-text">Known vulnerabilities</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            608
+                        </h5>
+                        <p class="card-text">Dependencies</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            August 28th 2025, 12:56:07 pm
+                        </h5>
+                        <p class="card-text">Last updated</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck my-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            1
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-danger">critical</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            3
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-warning">high</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            3
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-secondary">moderate</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            0
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-primary">low</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            0
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-info">info</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <table id="advisories" class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Module</th>
+                            <th scope="col">Severity</th>
+                            <th scope="col">CVEs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://github.com/advisories/GHSA-pfrx-2q88-qq97" data-toggle="modal" data-target="#advisory-modal-1088948">Got allows a redirect to a UNIX socket</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/got" target="_blank"
+                                    rel="noopener">got</a>
+                            </td>
+                            <td data-order="3"><span
+                                    class="badge badge-secondary">moderate</span></td>
+                            <td>
+                                
+                                , CVE-2022-33987
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://github.com/advisories/GHSA-4r62-v4vq-hr96" data-toggle="modal" data-target="#advisory-modal-1090022">Regular Expression Denial of Service (REDoS) in Marked</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/marked" target="_blank"
+                                    rel="noopener">marked</a>
+                            </td>
+                            <td data-order="3"><span
+                                    class="badge badge-secondary">moderate</span></td>
+                            <td>
+                                CWE-400
+                                , CVE-2021-21306
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://github.com/advisories/GHSA-rrrm-qjm4-v8hf" data-toggle="modal" data-target="#advisory-modal-1095051">Inefficient Regular Expression Complexity in marked</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/marked" target="_blank"
+                                    rel="noopener">marked</a>
+                            </td>
+                            <td data-order="2"><span
+                                    class="badge badge-warning">high</span></td>
+                            <td>
+                                CWE-400,CWE-1333
+                                , CVE-2022-21680
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://github.com/advisories/GHSA-5v2h-r2cx-5xgj" data-toggle="modal" data-target="#advisory-modal-1095052">Inefficient Regular Expression Complexity in marked</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/marked" target="_blank"
+                                    rel="noopener">marked</a>
+                            </td>
+                            <td data-order="2"><span
+                                    class="badge badge-warning">high</span></td>
+                            <td>
+                                CWE-1333
+                                , CVE-2022-21681
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://github.com/advisories/GHSA-vh95-rmgr-6w4m" data-toggle="modal" data-target="#advisory-modal-1096466">Prototype Pollution in minimist</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/minimist" target="_blank"
+                                    rel="noopener">minimist</a>
+                            </td>
+                            <td data-order="3"><span
+                                    class="badge badge-secondary">moderate</span></td>
+                            <td>
+                                CWE-1321
+                                , CVE-2020-7598
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://github.com/advisories/GHSA-f8q6-p94x-37v3" data-toggle="modal" data-target="#advisory-modal-1096485">minimatch ReDoS vulnerability</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/minimatch" target="_blank"
+                                    rel="noopener">minimatch</a>
+                            </td>
+                            <td data-order="2"><span
+                                    class="badge badge-warning">high</span></td>
+                            <td>
+                                CWE-400,CWE-1333
+                                , CVE-2022-3517
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://github.com/advisories/GHSA-xvch-5gv4-984h" data-toggle="modal" data-target="#advisory-modal-1097677">Prototype Pollution in minimist</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/minimist" target="_blank"
+                                    rel="noopener">minimist</a>
+                            </td>
+                            <td data-order="1"><span
+                                    class="badge badge-danger">critical</span></td>
+                            <td>
+                                CWE-1321
+                                , CVE-2021-44906
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1088948">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-secondary">moderate</span>
+                        Got allows a redirect to a UNIX socket
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/got" target="_blank"
+                                        rel="noopener">got</a>
+                                </li>
+                                <li>Published: June 19th 2022 </li>
+                                <li>Reported by: </li>
+                                <li></li>
+                                <li>CVE-2022-33987</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &lt;11.8.5</li>
+                                <li>Patched: &gt;&#x3D;11.8.5</li>
+                                <li>Exploitability: </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p>The got package before 11.8.5 and 12.1.0 for Node.js allows a redirect to a UNIX socket.</p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>. &gt; npm-audit-html@1.5.0 &gt; update-notifier@4.1.3 &gt; latest-version@5.1.0 &gt; package-json@6.5.0 &gt; got@9.6.0 </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 11.8.5 or later</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-33987">https://nvd.nist.gov/vuln/detail/CVE-2022-33987</a></li>
+<li><a href="https://github.com/sindresorhus/got/pull/2047">https://github.com/sindresorhus/got/pull/2047</a></li>
+<li><a href="https://github.com/sindresorhus/got/compare/v12.0.3...v12.1.0">https://github.com/sindresorhus/got/compare/v12.0.3...v12.1.0</a></li>
+<li><a href="https://github.com/sindresorhus/got/commit/861ccd9ac2237df762a9e2beed7edd88c60782dc">https://github.com/sindresorhus/got/commit/861ccd9ac2237df762a9e2beed7edd88c60782dc</a></li>
+<li><a href="https://github.com/sindresorhus/got/releases/tag/v11.8.5">https://github.com/sindresorhus/got/releases/tag/v11.8.5</a></li>
+<li><a href="https://github.com/sindresorhus/got/releases/tag/v12.1.0">https://github.com/sindresorhus/got/releases/tag/v12.1.0</a></li>
+<li><a href="https://github.com/advisories/GHSA-pfrx-2q88-qq97">https://github.com/advisories/GHSA-pfrx-2q88-qq97</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://github.com/advisories/GHSA-pfrx-2q88-qq97" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1090022">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-secondary">moderate</span>
+                        Regular Expression Denial of Service (REDoS) in Marked
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/marked" target="_blank"
+                                        rel="noopener">marked</a>
+                                </li>
+                                <li>Published: February 8th 2021 </li>
+                                <li>Reported by: </li>
+                                <li>CWE-400</li>
+                                <li>CVE-2021-21306</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &gt;&#x3D;1.1.1 &lt;2.0.0</li>
+                                <li>Patched: &gt;&#x3D;2.0.0</li>
+                                <li>Exploitability: </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><h3 id="impact">Impact</h3>
+<p><em>What kind of vulnerability is it? Who is impacted?</em></p>
+<p><a href="https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS">Regular expression Denial of Service</a></p>
+<p>A Denial of Service attack can affect anyone who runs user generated code through <code>marked</code>.</p>
+<h3 id="patches">Patches</h3>
+<p><em>Has the problem been patched? What versions should users upgrade to?</em></p>
+<p>patched in v2.0.0</p>
+<h3 id="workarounds">Workarounds</h3>
+<p><em>Is there a way for users to fix or remediate the vulnerability without upgrading?</em></p>
+<p>None.</p>
+<h3 id="references">References</h3>
+<p><em>Are there any links users can visit to find out more?</em></p>
+<p><a href="https://github.com/markedjs/marked/issues/1927">https://github.com/markedjs/marked/issues/1927</a>
+<a href="https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS">https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS</a></p>
+<h3 id="for-more-information">For more information</h3>
+<p>If you have any questions or comments about this advisory:</p>
+<ul>
+<li>Open an issue in <a href="https://github.com/markedjs/marked/issues">marked</a></li>
+</ul>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>. &gt; npm-audit-html@1.5.0 &gt; marked@1.2.9 </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 2.0.0 or later</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://github.com/markedjs/marked/security/advisories/GHSA-4r62-v4vq-hr96">https://github.com/markedjs/marked/security/advisories/GHSA-4r62-v4vq-hr96</a></li>
+<li><a href="https://github.com/markedjs/marked/issues/1927">https://github.com/markedjs/marked/issues/1927</a></li>
+<li><a href="https://github.com/markedjs/marked/pull/1864">https://github.com/markedjs/marked/pull/1864</a></li>
+<li><a href="https://github.com/markedjs/marked/commit/7293251c438e3ee968970f7609f1a27f9007bccd">https://github.com/markedjs/marked/commit/7293251c438e3ee968970f7609f1a27f9007bccd</a></li>
+<li><a href="https://www.npmjs.com/package/marked">https://www.npmjs.com/package/marked</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-21306">https://nvd.nist.gov/vuln/detail/CVE-2021-21306</a></li>
+<li><a href="https://github.com/advisories/GHSA-4r62-v4vq-hr96">https://github.com/advisories/GHSA-4r62-v4vq-hr96</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://github.com/advisories/GHSA-4r62-v4vq-hr96" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1095051">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-warning">high</span>
+                        Inefficient Regular Expression Complexity in marked
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/marked" target="_blank"
+                                        rel="noopener">marked</a>
+                                </li>
+                                <li>Published: January 14th 2022 </li>
+                                <li>Reported by: </li>
+                                <li>CWE-400,CWE-1333</li>
+                                <li>CVE-2022-21680</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &lt;4.0.10</li>
+                                <li>Patched: &gt;&#x3D;4.0.10</li>
+                                <li>Exploitability: </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><h3 id="impact">Impact</h3>
+<p><em>What kind of vulnerability is it?</em></p>
+<p>Denial of service.</p>
+<p>The regular expression <code>block.def</code> may cause catastrophic backtracking against some strings.
+PoC is the following.</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> marked <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;marked&quot;</span>;
+
+marked.parse(<span class="hljs-string">`[x]:<span class="hljs-subst">${<span class="hljs-string">&#x27; &#x27;</span>.repeat(<span class="hljs-number">1500</span>)}</span>x <span class="hljs-subst">${<span class="hljs-string">&#x27; &#x27;</span>.repeat(<span class="hljs-number">1500</span>)}</span> x`</span>);
+</code></pre>
+<p><em>Who is impacted?</em></p>
+<p>Anyone who runs untrusted markdown through marked and does not use a worker with a time limit.</p>
+<h3 id="patches">Patches</h3>
+<p><em>Has the problem been patched?</em></p>
+<p>Yes</p>
+<p><em>What versions should users upgrade to?</em></p>
+<p>4.0.10</p>
+<h3 id="workarounds">Workarounds</h3>
+<p><em>Is there a way for users to fix or remediate the vulnerability without upgrading?</em></p>
+<p>Do not run untrusted markdown through marked or run marked on a <a href="https://marked.js.org/using_advanced#workers">worker</a> thread and set a reasonable time limit to prevent draining resources.</p>
+<h3 id="references">References</h3>
+<p><em>Are there any links users can visit to find out more?</em></p>
+<ul>
+<li><a href="https://marked.js.org/using_advanced#workers">https://marked.js.org/using_advanced#workers</a></li>
+<li><a href="https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS">https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS</a></li>
+</ul>
+<h3 id="for-more-information">For more information</h3>
+<p>If you have any questions or comments about this advisory:</p>
+<ul>
+<li>Open an issue in <a href="https://github.com/markedjs/marked">marked</a></li>
+</ul>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>. &gt; npm-audit-html@1.5.0 &gt; marked@1.2.9 </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 4.0.10 or later</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://github.com/markedjs/marked/security/advisories/GHSA-rrrm-qjm4-v8hf">https://github.com/markedjs/marked/security/advisories/GHSA-rrrm-qjm4-v8hf</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-21680">https://nvd.nist.gov/vuln/detail/CVE-2022-21680</a></li>
+<li><a href="https://github.com/markedjs/marked/commit/c4a3ccd344b6929afa8a1d50ac54a721e57012c0">https://github.com/markedjs/marked/commit/c4a3ccd344b6929afa8a1d50ac54a721e57012c0</a></li>
+<li><a href="https://github.com/markedjs/marked/releases/tag/v4.0.10">https://github.com/markedjs/marked/releases/tag/v4.0.10</a></li>
+<li><a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AIXDMC3CSHYW3YWVSQOXAWLUYQHAO5UX/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AIXDMC3CSHYW3YWVSQOXAWLUYQHAO5UX/</a></li>
+<li><a href="https://github.com/advisories/GHSA-rrrm-qjm4-v8hf">https://github.com/advisories/GHSA-rrrm-qjm4-v8hf</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://github.com/advisories/GHSA-rrrm-qjm4-v8hf" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1095052">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-warning">high</span>
+                        Inefficient Regular Expression Complexity in marked
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/marked" target="_blank"
+                                        rel="noopener">marked</a>
+                                </li>
+                                <li>Published: January 14th 2022 </li>
+                                <li>Reported by: </li>
+                                <li>CWE-1333</li>
+                                <li>CVE-2022-21681</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &lt;4.0.10</li>
+                                <li>Patched: &gt;&#x3D;4.0.10</li>
+                                <li>Exploitability: </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><h3 id="impact">Impact</h3>
+<p><em>What kind of vulnerability is it?</em></p>
+<p>Denial of service.</p>
+<p>The regular expression <code>inline.reflinkSearch</code> may cause catastrophic backtracking against some strings.
+PoC is the following.</p>
+<pre><code class="language-javascript">import * as marked from <span class="hljs-string">&#x27;marked&#x27;</span>;
+
+console.log(marked.parse(`[x]: x
+
+\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](\\[\\](`));
+</code></pre>
+<p><em>Who is impacted?</em></p>
+<p>Anyone who runs untrusted markdown through marked and does not use a worker with a time limit.</p>
+<h3 id="patches">Patches</h3>
+<p><em>Has the problem been patched?</em></p>
+<p>Yes</p>
+<p><em>What versions should users upgrade to?</em></p>
+<p>4.0.10</p>
+<h3 id="workarounds">Workarounds</h3>
+<p><em>Is there a way for users to fix or remediate the vulnerability without upgrading?</em></p>
+<p>Do not run untrusted markdown through marked or run marked on a <a href="https://marked.js.org/using_advanced#workers">worker</a> thread and set a reasonable time limit to prevent draining resources.</p>
+<h3 id="references">References</h3>
+<p><em>Are there any links users can visit to find out more?</em></p>
+<ul>
+<li><a href="https://marked.js.org/using_advanced#workers">https://marked.js.org/using_advanced#workers</a></li>
+<li><a href="https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS">https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS</a></li>
+</ul>
+<h3 id="for-more-information">For more information</h3>
+<p>If you have any questions or comments about this advisory:</p>
+<ul>
+<li>Open an issue in <a href="https://github.com/markedjs/marked">marked</a></li>
+</ul>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>. &gt; npm-audit-html@1.5.0 &gt; marked@1.2.9 </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 4.0.10 or later</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://github.com/markedjs/marked/security/advisories/GHSA-5v2h-r2cx-5xgj">https://github.com/markedjs/marked/security/advisories/GHSA-5v2h-r2cx-5xgj</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-21681">https://nvd.nist.gov/vuln/detail/CVE-2022-21681</a></li>
+<li><a href="https://github.com/markedjs/marked/commit/8f806573a3f6c6b7a39b8cdb66ab5ebb8d55a5f5">https://github.com/markedjs/marked/commit/8f806573a3f6c6b7a39b8cdb66ab5ebb8d55a5f5</a></li>
+<li><a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AIXDMC3CSHYW3YWVSQOXAWLUYQHAO5UX/">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AIXDMC3CSHYW3YWVSQOXAWLUYQHAO5UX/</a></li>
+<li><a href="https://github.com/markedjs/marked/commit/c4a3ccd344b6929afa8a1d50ac54a721e57012c0">https://github.com/markedjs/marked/commit/c4a3ccd344b6929afa8a1d50ac54a721e57012c0</a></li>
+<li><a href="https://github.com/advisories/GHSA-5v2h-r2cx-5xgj">https://github.com/advisories/GHSA-5v2h-r2cx-5xgj</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://github.com/advisories/GHSA-5v2h-r2cx-5xgj" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1096466">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-secondary">moderate</span>
+                        Prototype Pollution in minimist
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/minimist" target="_blank"
+                                        rel="noopener">minimist</a>
+                                </li>
+                                <li>Published: April 3rd 2020 </li>
+                                <li>Reported by: </li>
+                                <li>CWE-1321</li>
+                                <li>CVE-2020-7598</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &lt;0.2.1</li>
+                                <li>Patched: &gt;&#x3D;0.2.1</li>
+                                <li>Exploitability: </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p>Affected versions of <code>minimist</code> are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of <code>Object</code>, causing the addition or modification of an existing property that will exist on all objects.<br>Parsing the argument <code>--__proto__.y=Polluted</code> adds a <code>y</code> property with value <code>Polluted</code> to all objects. The argument <code>--__proto__=Polluted</code> raises and uncaught error and crashes the application.<br>This is exploitable if attackers have control over the arguments being passed to <code>minimist</code>.</p>
+<h2 id="recommendation">Recommendation</h2>
+<p>Upgrade to versions 0.2.1, 1.2.3 or later.</p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>calculator &gt; mocha@5.2.0 &gt; mkdirp@0.5.1 &gt; minimist@0.0.8 </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 0.2.1 or later</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-7598">https://nvd.nist.gov/vuln/detail/CVE-2020-7598</a></li>
+<li><a href="https://snyk.io/vuln/SNYK-JS-MINIMIST-559764">https://snyk.io/vuln/SNYK-JS-MINIMIST-559764</a></li>
+<li><a href="http://lists.opensuse.org/opensuse-security-announce/2020-06/msg00024.html">http://lists.opensuse.org/opensuse-security-announce/2020-06/msg00024.html</a></li>
+<li><a href="https://www.npmjs.com/advisories/1179">https://www.npmjs.com/advisories/1179</a></li>
+<li><a href="https://github.com/minimistjs/minimist/commit/10bd4cdf49d9686d48214be9d579a9cdfda37c68">https://github.com/minimistjs/minimist/commit/10bd4cdf49d9686d48214be9d579a9cdfda37c68</a></li>
+<li><a href="https://github.com/minimistjs/minimist/commit/38a4d1caead72ef99e824bb420a2528eec03d9ab">https://github.com/minimistjs/minimist/commit/38a4d1caead72ef99e824bb420a2528eec03d9ab</a></li>
+<li><a href="https://github.com/minimistjs/minimist/commit/4cf1354839cb972e38496d35e12f806eea92c11f#diff-a1e0ee62c91705696ddb71aa30ad4f95">https://github.com/minimistjs/minimist/commit/4cf1354839cb972e38496d35e12f806eea92c11f#diff-a1e0ee62c91705696ddb71aa30ad4f95</a></li>
+<li><a href="https://github.com/minimistjs/minimist/commit/63e7ed05aa4b1889ec2f3b196426db4500cbda94">https://github.com/minimistjs/minimist/commit/63e7ed05aa4b1889ec2f3b196426db4500cbda94</a></li>
+<li><a href="https://github.com/advisories/GHSA-vh95-rmgr-6w4m">https://github.com/advisories/GHSA-vh95-rmgr-6w4m</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://github.com/advisories/GHSA-vh95-rmgr-6w4m" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1096485">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-warning">high</span>
+                        minimatch ReDoS vulnerability
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/minimatch" target="_blank"
+                                        rel="noopener">minimatch</a>
+                                </li>
+                                <li>Published: October 18th 2022 </li>
+                                <li>Reported by: </li>
+                                <li>CWE-400,CWE-1333</li>
+                                <li>CVE-2022-3517</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &lt;3.0.5</li>
+                                <li>Patched: &gt;&#x3D;3.0.5</li>
+                                <li>Exploitability: </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p>A vulnerability was found in the minimatch package. This flaw allows a Regular Expression Denial of Service (ReDoS) when calling the braceExpand function with specific arguments, resulting in a Denial of Service.</p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>calculator &gt; mocha@5.2.0 &gt; glob@7.1.2 &gt; minimatch@3.0.4 </li>
+                        <li>calculator &gt; mocha@5.2.0 &gt; minimatch@3.0.4 </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 3.0.5 or later</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-3517">https://nvd.nist.gov/vuln/detail/CVE-2022-3517</a></li>
+<li><a href="https://github.com/grafana/grafana-image-renderer/issues/329">https://github.com/grafana/grafana-image-renderer/issues/329</a></li>
+<li><a href="https://github.com/isaacs/minimatch/commit/a8763f4388e51956be62dc6025cec1126beeb5e6">https://github.com/isaacs/minimatch/commit/a8763f4388e51956be62dc6025cec1126beeb5e6</a></li>
+<li><a href="https://github.com/nodejs/node/issues/42510">https://github.com/nodejs/node/issues/42510</a></li>
+<li><a href="https://lists.debian.org/debian-lts-announce/2023/01/msg00011.html">https://lists.debian.org/debian-lts-announce/2023/01/msg00011.html</a></li>
+<li><a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MTEUUTNIEBHGKUKKLNUZSV7IEP6IP3Q3">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MTEUUTNIEBHGKUKKLNUZSV7IEP6IP3Q3</a></li>
+<li><a href="https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UM6XJ73Q3NAM5KSGCOKJ2ZIA6GUWUJLK">https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UM6XJ73Q3NAM5KSGCOKJ2ZIA6GUWUJLK</a></li>
+<li><a href="https://github.com/advisories/GHSA-f8q6-p94x-37v3">https://github.com/advisories/GHSA-f8q6-p94x-37v3</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://github.com/advisories/GHSA-f8q6-p94x-37v3" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1097677">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-danger">critical</span>
+                        Prototype Pollution in minimist
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/minimist" target="_blank"
+                                        rel="noopener">minimist</a>
+                                </li>
+                                <li>Published: March 18th 2022 </li>
+                                <li>Reported by: </li>
+                                <li>CWE-1321</li>
+                                <li>CVE-2021-44906</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &lt;0.2.4</li>
+                                <li>Patched: &gt;&#x3D;0.2.4</li>
+                                <li>Exploitability: </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p>Minimist prior to 1.2.6 and 0.2.4 is vulnerable to Prototype Pollution via file <code>index.js</code>, function <code>setKey()</code> (lines 69-95).</p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>calculator &gt; mocha@5.2.0 &gt; mkdirp@0.5.1 &gt; minimist@0.0.8 </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 0.2.4 or later</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-44906">https://nvd.nist.gov/vuln/detail/CVE-2021-44906</a></li>
+<li><a href="https://github.com/substack/minimist/issues/164">https://github.com/substack/minimist/issues/164</a></li>
+<li><a href="https://github.com/substack/minimist/blob/master/index.js#L69">https://github.com/substack/minimist/blob/master/index.js#L69</a></li>
+<li><a href="https://snyk.io/vuln/SNYK-JS-MINIMIST-559764">https://snyk.io/vuln/SNYK-JS-MINIMIST-559764</a></li>
+<li><a href="https://stackoverflow.com/questions/8588563/adding-custom-properties-to-a-function/20278068#20278068">https://stackoverflow.com/questions/8588563/adding-custom-properties-to-a-function/20278068#20278068</a></li>
+<li><a href="https://github.com/Marynk/JavaScript-vulnerability-detection/blob/main/minimist%20PoC.zip">https://github.com/Marynk/JavaScript-vulnerability-detection/blob/main/minimist%20PoC.zip</a></li>
+<li><a href="https://github.com/minimistjs/minimist/issues/11">https://github.com/minimistjs/minimist/issues/11</a></li>
+<li><a href="https://github.com/minimistjs/minimist/pull/24">https://github.com/minimistjs/minimist/pull/24</a></li>
+<li><a href="https://github.com/minimistjs/minimist/commit/34e20b8461118608703d6485326abbb8e35e1703">https://github.com/minimistjs/minimist/commit/34e20b8461118608703d6485326abbb8e35e1703</a></li>
+<li><a href="https://github.com/minimistjs/minimist/commit/bc8ecee43875261f4f17eb20b1243d3ed15e70eb">https://github.com/minimistjs/minimist/commit/bc8ecee43875261f4f17eb20b1243d3ed15e70eb</a></li>
+<li><a href="https://github.com/minimistjs/minimist/commit/c2b981977fa834b223b408cfb860f933c9811e4d">https://github.com/minimistjs/minimist/commit/c2b981977fa834b223b408cfb860f933c9811e4d</a></li>
+<li><a href="https://github.com/minimistjs/minimist/commit/ef9153fc52b6cea0744b2239921c5dcae4697f11">https://github.com/minimistjs/minimist/commit/ef9153fc52b6cea0744b2239921c5dcae4697f11</a></li>
+<li><a href="https://github.com/minimistjs/minimist/commits/v0.2.4">https://github.com/minimistjs/minimist/commits/v0.2.4</a></li>
+<li><a href="https://security.netapp.com/advisory/ntap-20240621-0006">https://security.netapp.com/advisory/ntap-20240621-0006</a></li>
+<li><a href="https://github.com/advisories/GHSA-xvch-5gv4-984h">https://github.com/advisories/GHSA-xvch-5gv4-984h</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://github.com/advisories/GHSA-xvch-5gv4-984h" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#advisories').DataTable({
+                order: [[2, 'asc']]
+            });
+        });
+    </script>
+</body>
+
+</html>

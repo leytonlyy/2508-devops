@@ -9,7 +9,9 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "prepare": "husky"
+    "prepare": "husky",
+    "audit:pnpm": "pnpm audit --json | npm-audit-html --output ./pnpm-audit.html",
+    "audit:trivy": "trivy fs --exit-code 1 --format template --template \"@trivy-html.tpl\" . -o trivy-report.html"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,7 @@
   "homepage": "https://github.com/bngams/2508-devops#readme",
   "devDependencies": {
     "husky": "^9.1.7",
+    "npm-audit-html": "^1.5.0",
     "turbo": "^2.5.6"
   }
 }
