@@ -1,0 +1,11 @@
+- name: Init
+  hosts: nodes
+  become: true # si pas root => sudo
+  tasks:
+    - name: apt update
+      apt:
+        update_cache: yes
+    - name: install nano
+      apt:
+        name: nano
+        state: present
