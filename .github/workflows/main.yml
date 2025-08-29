@@ -68,9 +68,11 @@ jobs:
      - name: webfactory/ssh-agent
        uses: webfactory/ssh-agent@v0.9.0
        with:
+         # TODO: Create secret key
+         # TODO: Authorize remote server fingerprint
          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
      - name: Setup Ansible
-       # autre action plus legit ?
+       # Check for official action
        uses: alex-oleshkevich/setup-ansible@v1.0.1
      - name: Run ansible
        run: ansible -i ops/ansible/inventory.yaml ops/ansible/playbook.yaml
