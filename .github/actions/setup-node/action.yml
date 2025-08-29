@@ -15,9 +15,10 @@ runs:
       with:
         node-version: "22.x"
         cache: "pnpm"
-    - name: Restore node_modules
+    - name: Restore node_modules cache
       if: inputs.restore-cache == 'true'
-      uses: actions/cache@v4
+      id: cache-restore
+      uses: actions/cache/restore@v4
       with:
         path: node_modules
         key: ${{ runner.os }}-node-${{ hashFiles('pnpm-lock.yaml') }}
