@@ -36,6 +36,8 @@ jobs:
         uses: ./.github/actions/setup-node
         with:
           restore-cache: "true"
+      - name: Install dependencies
+        run: pnpm install
       - name: Build
         run: pnpm run build
 
@@ -63,17 +65,16 @@ jobs:
     runs-on: ubuntu-latest
     needs: security-scan
     steps:
-     - name: Checkout code
-       uses: actions/checkout@v5.0.0
-     - name: webfactory/ssh-agent
-       uses: webfactory/ssh-agent@v0.9.0
-       with:
-         # TODO: Create secret key
-         # TODO: Authorize remote server fingerprint
-         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-     - name: Setup Ansible
-       # Check for official action
-       uses: alex-oleshkevich/setup-ansible@v1.0.1
-     - name: Run ansible
-       run: ansible -i ops/ansible/inventory.yaml ops/ansible/playbook.yaml
-    
+      - name: Checkout code
+        uses: actions/checkout@v5.0.0
+      - name: webfactory/ssh-agent
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          # TODO: Create secret key
+          # TODO: Authorize remote server fingerprint
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Setup Ansible
+        uses: alex-oleshkevich/setup-ansible@v1.0.1
+        # Check for official action
+      - name: Run ansible
+        run: ansible -i ops/ansible/inventory.yaml ops/ansible/playbook.yaml
